@@ -30,7 +30,7 @@ class FunctionsCalculator {
         //функція для піднесення цисла до цілого степеню
         fun GetPowerOfNumber(number: Double, power: Int) : Double {
             println("Calculating $number ^ $power")
-            //почтакове значення - 1
+            //початкове значення - 1
             var result = 1.0
             //якщо степінь від'ємний, ділимо на число
             if (power < 0) {
@@ -51,7 +51,7 @@ class FunctionsCalculator {
         //функція обчислення значення квадратичної функції
         fun GetQuadraticFunctionValue(argument: Double, coeficient1: Double, coeficient2: Double, coeficient3: Double) : Double {
             println("Claculating function y = ${coeficient1}x^2 + ${coeficient2}x + $coeficient3    x = $argument")
-            //повертаємо значення функції. Цього разу було використано свою функцію піднесення до степеню замість стандартної
+            //повертаємо значення функції. Цього разу було використано свою функцію піднесення до степеня замість стандартної
             return coeficient1 * GetPowerOfNumber(argument, 2) + coeficient2 * argument + coeficient3
         }
     }

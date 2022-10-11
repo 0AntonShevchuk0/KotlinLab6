@@ -65,6 +65,6 @@ fun main() {
         println("You need to enter 6 numbers")
     }
     catch (e: Exception) {
-        println(e)
+        println(e.message)
     }
 }
